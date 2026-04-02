@@ -58,6 +58,7 @@ main{
     /* gap: 3px; */
 width: 15em;
 outline: none;
+
 }
 
 /* .box {
@@ -73,6 +74,8 @@ outline: none;
     background: transparent;
     border: none;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 800;
    
 }
 
@@ -99,4 +102,13 @@ outline: none;
 .box:nth-child(6) {
     border-bottom: 2px solid var(--circle);
     
+}
+
+#reset{
+    padding: 10px;
+    background-color: #0de5cf70;
+    border: 1px solid white;
+    color: white;
+    font: 1em;
+    font-weight: 600;
 }
