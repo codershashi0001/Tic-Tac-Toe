@@ -1,0 +1,92 @@
+:root{
+    --cross : #8ADED6;
+    --circle : #FFFFFF;
+    --bg : #14BDAC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg) ;
+    /* color: black; */
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-top: 150px;
+    overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 3px; */
+width: 15em;
+outline: none;
+}
+
+/* .box {
+    width: 100px;
+    height: 100px;
+} */
+
+
+
+.box{
+    width:5em;
+    height:5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.box:hover{
+    background-color: #ecf0f05f;
+}
+
+/* vertical lines */
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(7),
+.box:nth-child(8) {
+    border-right: 2px solid var(--circle);
+}
+
+/* horizontal lines */
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6) {
+    border-bottom: 2px solid var(--circle);
+    
+}
