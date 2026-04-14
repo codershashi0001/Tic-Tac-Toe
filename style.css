@@ -38,6 +38,7 @@ main{
     overflow: hidden; */
     width: 100%;
     height: 100%;
+   
     
 }
 .container{
@@ -113,5 +114,31 @@ outline: none;
     color: white;
     font: 1em;
     font-weight: 600;
+    cursor: pointer;
     /* margin: 10px; */
+}
+
+#re{
+     padding: 10px;
+    background-color: #0de5cf70;
+    border: 1px solid white;
+    color: white;
+    font: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.new
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+   gap: 15px;
+    flex-direction: column;
+  
+}
+
+.hide{
+    display: none;
 }
