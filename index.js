@@ -17,7 +17,7 @@ if (v === "X" || v === "x"){
 else {
     turn = false;
 }
-
+ 
 const winn = [
     [0, 1, 2],
     [0, 3, 6],
