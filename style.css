@@ -142,3 +142,27 @@ outline: none;
 .hide{
     display: none;
 }
+
+.choice
+{
+    display: flex;
+    /* padding: 10px; */
+    background-color: #0de5cf70;
+    border: 1px solid white;
+    color: white;
+    font: 1em;
+    font-weight: 600;
+  
+    gap: 5px;
+}
+
+#choice1 , #choice2{
+    width: 80px;
+    height: 40px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+            font: 1em;
+  cursor: pointer;
+
+}

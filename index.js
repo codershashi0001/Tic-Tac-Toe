@@ -5,18 +5,42 @@ let btn = document.querySelectorAll(".box")
 let msg = document.querySelector(".win-msg")
 let nee = document.querySelector(".new")
 let main = document.querySelector("main")
+let choice = document.querySelectorAll(".choice button")
 
-let v = prompt("what you want to choose 'x', 'o'");
+let turn ;
 
 
-let turn ; // true = x / false = O
-
-if (v === "X" || v === "x"){
+// let v = prompt("what you want to choose 'x', 'o'");
+choice.forEach((c)=>{
+    c.addEventListener("click",(v)=>{
+        // console.log(v.target.value)
+        if (v.target.value === "X" || v.target.value === "x"){
     turn = true;
+  
 }
-else {
+else if (v.target.value === "o" || v.target.value === "O"){
     turn = false;
+   
 }
+choice.forEach((p)=>{
+    p.disabled = true
+})
+
+})
+   
+}
+)
+
+
+
+ // true = x / false = O
+
+// if (v === "X" || v === "x"){
+//     turn = true;
+// }
+// else {
+//     turn = false;
+// }
  
 const winn = [
     [0, 1, 2],
@@ -67,9 +91,14 @@ checkwinner()
 
 re.addEventListener("click", () =>{
     location.reload()
+    alert("choose your choice")
 })
 reset.addEventListener("click", () =>{
     location.reload()
+    alert("choose your choice")
+
+    
+
 })
 
 // if(winn[0] === "x" && winn [1] === "x" || winn[2] === "x"){
@@ -86,7 +115,7 @@ for (let patterns of winn){
 
     if (p1 != "" && p2 != "" && p3 != "" ){
          if (p1 === p2 && p2 === p3 && p3 === p1){
-            console.log("hiiiiii" , p1)
+            // console.log("hiiiiii" , p1)
             showWInner(p1);
                 
                    
